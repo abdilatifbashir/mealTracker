@@ -1,8 +1,26 @@
 
-<app-new-food (newFoodSender)="addNewFood($event)">
 
-</app-new-food>
-<app-food-list
-[childFoodList]="masterFoodsList"
-(clickSender)="showDetails($event)"
-></app-food-list>
+
+<div class="container">
+  <div class="row">
+    <div class="jumbotron">
+    <h1>Meal Tracker</h1>
+  </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+
+      <app-new-food (newFoodSender)="addNewFood($event)">
+
+      </app-new-food>
+
+    </div>
+    <div class="col-md-6">
+      <app-food-list
+      [childFoodList]="masterFoodsList"
+      (clickSender)="showDetails($event)"
+      ></app-food-list>
+    </div>
+  </div>
+</div>

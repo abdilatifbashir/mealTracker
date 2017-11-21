@@ -1,8 +1,10 @@
-<ol>
-  <li *ngFor="let foodlist of childFoodList">
-    name: {{foodlist.name}}<br>
-  description: {{foodlist.description}}<br>
-    calories:{{foodlist.calories}}
+<table class="table table-hover">
+<tr class="success" *ngFor="let foodlist of childFoodList">
 
-  </li>
-</ol>
+    <td>name: {{foodlist.name}}</td>
+  <td>description: {{foodlist.description}}</td>
+    <td>calories:{{foodlist.calories}}</td>
+
+  </tr>
+
+</table>
