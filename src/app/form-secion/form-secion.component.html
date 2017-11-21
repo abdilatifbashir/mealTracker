@@ -2,10 +2,11 @@
 <form>
   <p>enter your menu</p>
   <label for="name">name</label>
-  <input type="text" id="name"><br>
+  <input type="text" id="name" #foodName><br>
   <label for="description">description</label>
-  <input type="text" id="description"><br>
+  <input type="text" id="description" #foodDescription><br>
   <label for="calories">caloris</label>
-  <input type="text" id="calories">
+  <input type="text" id="calories" #foodCalories>
 
 </form>
+<button (click)="addFoodOptions(foodName.value,foodDescription.value,foodCalories.value);">add your food option</button>

@@ -1,27 +1,55 @@
-# MealTracker
+#  Tracker angular app
+#### A meal tracking application where users log foods they’ve eaten each day, including details about the meal and its number of calories.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+## Built By **[abdilatifbashir](https://github.com/abdilatifbashir/mealTracker)**
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This is a meal tracking web application. The user can input information about their meal in a form. The information required is:
+* The name of the meal.
+* Details about it.
+* Caloric content.
 
-## Code scaffolding
+Once entered the meals will be displayed in a list. The user has the option of editing any meal already entered. There is also a filter for displaying the meals according to whether there caloric content is above or below 500.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Features
+* About the app section with information about the app.
+* A meal entry form.
+* An editing meal form.
+* Meal list display filter.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Setup/Installation Requirements
+### Prerequisites
+You need to have node and npm and bower installed on your machine.
+To install:
 
-## Running unit tests
+	* node, visit https://nodejs.org/en/ for guidance. (node comes with npm)
+	* bower, on your terminal run $ npm install -g bower  
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To clone the repo,
 
-## Running end-to-end tests
+	* $ git  clone https://github.com/abdilatifbashir/mealTracker.git
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+For the app to work, you must download dependencies, on your terminal run:
 
-## Further help
+	* $ npm install
+	* $ bower install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Known Bugs
+
+No known bugs.
+
+## Technologies Used
+
+- HTML
+- SCSS
+- Angular 4
+- TypeScript
+- Node packages
+- Bower packages
+
+
+### License
+
+MIT (c) 2017 **[abdidifbashir]**
