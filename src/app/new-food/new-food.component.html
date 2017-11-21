@@ -1,0 +1,8 @@
+<label>Food Name</label><br>
+<input style="width:90%; height:40px" #newName><br>
+<label>Description</label><br>
+<input style="width:90%; height:40px" #newDescription><br>
+<label>Calories</label><br>
+<input style="width:90%; height:40px" #newCalorie><br>
+<button style="margin-top:50px" (click)="addFood(newName.value, newDescription.value, newCalorie.value);
+newName.value='';newDescription.value='';newCalorie.value=''">ADD TO LIST</button>
