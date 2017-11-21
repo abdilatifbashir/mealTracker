@@ -1,2 +1,8 @@
 
-<app-new-food></app-new-food>
+<app-new-food (newFoodSender)="addNewFood($event)">
+
+</app-new-food>
+<app-food-list
+[childFoodList]="masterFoodsList"
+(clickSender)="showDetails($event)"
+></app-food-list>
