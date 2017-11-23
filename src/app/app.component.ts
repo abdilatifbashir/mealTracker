@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {Food} from './food';
+import { Component, Input } from '@angular/core';
+import { Food } from './food';
 
 
 @Component({
@@ -12,12 +12,18 @@ export class AppComponent {
 
 masterFoodsList:Food[]=[
 ];
-selectedFood=null;
+
+finishedEditting(){
+  this.selectedFood = null;
+}
+
+selectedFood: Food =null;
+
   addNewFood(newFoodFromChild:Food){
     this.masterFoodsList.unshift(newFoodFromChild);
   }
-showDetails(myFood:Food[]){
-  this.selectedFood=myFood;
+showDetails(myFood:Food){
+  this.selectedFood =myFood;
 }
 
 }

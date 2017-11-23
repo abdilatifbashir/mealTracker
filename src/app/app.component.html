@@ -17,10 +17,15 @@
 
     </div>
     <div class="col-md-6">
+    <p style="color:white;font-size:18px;">your food option is:</p>
       <app-food-list
       [childFoodList]="masterFoodsList"
-      (clickSender)="showDetails($event)"
+      (editFood)="showDetails($event)"
       ></app-food-list>
+      <app-edit-food
+        [foodChildSelected]="selectedFood"
+        (doneClickSender)="finishedEditting()"
+      ></app-edit-food>
     </div>
   </div>
 </div>

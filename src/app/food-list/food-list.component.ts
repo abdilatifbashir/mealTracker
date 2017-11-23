@@ -9,7 +9,11 @@ import { Food } from '../food';
 })
 export class FoodListComponent{
    @Input() childFoodList:Food[];
+   @Output() editFood = new EventEmitter();
 
+   editFoodButton(foodToEdit: Food){
+     this.editFood.emit(foodToEdit);
+   }
   constructor() { }
 
 
