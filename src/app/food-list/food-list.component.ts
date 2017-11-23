@@ -14,6 +14,12 @@ export class FoodListComponent{
    editFoodButton(foodToEdit: Food){
      this.editFood.emit(foodToEdit);
    }
+   @Output() deleteFood = new EventEmitter();
+
+   deleteFoodButton(foodToDelete: Food){
+     console.log("FoodToDel:" + foodToDelete.name);
+     this.deleteFood.emit(foodToDelete);
+   }
   constructor() { }
 
 

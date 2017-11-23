@@ -11,6 +11,9 @@ export class AppComponent {
   title = 'app';
 
 masterFoodsList:Food[]=[
+  new Food("Chips", "Fries", 34),
+  new Food("Rice", "fsfs", 534),
+  new Food("Chapati", "Wheat", 324)
 ];
 
 finishedEditting(){
@@ -24,6 +27,11 @@ selectedFood: Food =null;
   }
 showDetails(myFood:Food){
   this.selectedFood =myFood;
+}
+delFood(FoodToDel:Food){
+
+  var index:number = this.masterFoodsList.indexOf(FoodToDel);
+  this.masterFoodsList.splice(index,1);
 }
 
 }

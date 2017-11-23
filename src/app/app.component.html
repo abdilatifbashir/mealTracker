@@ -21,6 +21,8 @@
       <app-food-list
       [childFoodList]="masterFoodsList"
       (editFood)="showDetails($event)"
+      (deleteFood)="delFood($event)"
+
       ></app-food-list>
       <app-edit-food
         [foodChildSelected]="selectedFood"
