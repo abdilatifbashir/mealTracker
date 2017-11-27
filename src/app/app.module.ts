@@ -8,12 +8,14 @@ import { NewFoodComponent } from './new-food/new-food.component';
 import { FoodListComponent } from './food-list/food-list.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     EditFoodComponent,
     NewFoodComponent,
-    FoodListComponent
+    FoodListComponent,
+
   ],
   imports: [
     BrowserModule,

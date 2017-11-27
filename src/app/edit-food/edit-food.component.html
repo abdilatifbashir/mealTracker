@@ -1,7 +1,7 @@
 <div *ngIf="foodChildSelected">
-  <h4>Edit the meals details</h4>
-  <p>Name: <input [(ngModel)]="foodChildSelected.name"></p>
-  <p>Description: <input [(ngModel)]="foodChildSelected.description"></p>
-  <p>Calories: <input [(ngModel)]="foodChildSelected.calories"></p>
-  <button (click)="doneEditting()">Save</button>
+  <h4 style="color:white;">Edit the meals details</h4>
+  <p style="color:white;  font-size:17px;">Name: <input [(ngModel)]="foodChildSelected.name" style="color:black;margin-left:50px; height:34px; border-radius:5px;"></p>
+  <p style="color:white; font-size:17px;">Description: <input [(ngModel)]="foodChildSelected.description" style="color:black;margin-left:17px;  height:34px; border-radius:5px;"></p>
+  <p style="color:white;  font-size:17px;">Calories: <input [(ngModel)]="foodChildSelected.calories" style="color:black;margin-left:32px;  height:34px; border-radius:5px;"></p>
+  <button class="btn btn-primary btn-lg"(click)="doneEditting()">Save</button>
 </div>
