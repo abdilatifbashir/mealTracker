@@ -15,7 +15,7 @@ masterFoodsList:Food[]=[
   new Food("Rice", "baris bashori", 534),
   new Food("Chapati", "Wheat", 324)
   new Food("bosho", "bosho sukuma", 324)
-  new Food("dorsho", "mcaan", 324)
+  
 ];
 
 finishedEditting(){
