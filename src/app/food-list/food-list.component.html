@@ -1,9 +1,9 @@
 <table class="table table-hover">
 <tr class="success" *ngFor="let foodlist of childFoodList">
 
-    <td>name: {{foodlist.name}}</td>
-  <td>description: {{foodlist.description}}</td>
-    <td>calories:{{foodlist.calories}}</td>
+    <td style="border-radius:5px;">name: {{foodlist.name}}</td>
+  <td style="border-radius:5px;">description: {{foodlist.description}}</td>
+    <td style="border-radius:5px;">calories:{{foodlist.calories}}</td>
     <button class="btn btn-primary btn-lg"  (click)="editFoodButton(foodlist)" style="margin:5px;">Edit</button>
     <button class="btn btn-primary btn-lg" (click)="deleteFoodButton(foodlist)">delete</button>
   </tr>
